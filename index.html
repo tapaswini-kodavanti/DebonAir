@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>repl.it</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+		</style>
+  </head>
+  <body>
+
+	  	<!-- Header -->
+	  	<div class='headerContainer'>
+			<div class='navContainer'>
+				<a class='navLink' href='index.html'>Home</a>
+				<a class='navLink' href='information.html'>Information</a>
+				<a class='navLink' href='resources.html'>Resources</a>
+			</div>
+
+			<div class='subContainer'>
+				<div class='infoContainer'>
+					<h1 class='header'>DebonAir</h1>
+					<h3 class='header' style="font-weight: 400">Promoting a pollution-free environment</h3>
+				</div>
+				<img class='image' src="headerImg.png">
+			</div>
+		</div>
+
+		<!-- Body -->
+		<div class='bodyContainer' style="height: 1750px">
+			<div class='introContainer'>
+				<img class='image' src='parkImg.png'>
+				<div class='infoContainer'>
+					<h3 class="infoBoxHeader">Health and Wellness</h3>
+					<p class="infoBoxHeaderSub">
+						Air pollution can be irritating to anyone, regardless of respiratory illnesses. However, if extra care is needed to avoid places that may have higher pollutant concentrations, DebonAir is your solution. Enter an address below to get statistics on the current air quality.  
+					</p>
+
+					<p class="infoBoxHeaderSub">
+						Find your coordinates <a href="https://www.latlong.net/convert-address-to-lat-long.html"> here.</a></p>
+				</div>
+			</div>
+
+			<div class='addressContainer'>
+				<h2 class='header'>Enter Your Latitude and Longitude Coordinates</h2>
+				<input class="addressInput" placeholder="Latitude Longitude">
+				<div class="submitButton submitButtonReal">
+					Enter
+				</div>
+			</div>
+
+			<!-- Results -->
+			<div class="resultsContainer" id="resultsContainer">
+				<div style="width: 100%; display: flex; justify-content: center">
+					<h1 class='resultsHeader'>
+						Results
+					</h1>
+				</div>
+
+				<div class='introContainer'>
+					<img class='image' src='image.png'>
+					<div class='infoContainer'>
+						<h3 class="infoBoxHeader">Air Quality Index: </h3>
+						<h3 class="infoBoxHeader" style: "margin: 0px">Excellent</h3>
+						<p class="infoBoxHeaderSub">
+							The air quality at the moment is great. People with respiratory illnesses, the elderly, and children should still take cautions, but there are no current dangers.  
+						</p>
+
+						<p class="infoBoxHeaderSub">
+							<strong>CAUTION: </strong>
+							Unusually sensitive individuals should avoid prolonged periods outside.  
+						</p>
+					</div>
+				</div>
+
+				<div class="bubbleContainer">
+					<div class='bubble carbon-monoxide'>
+						<p class="bubbleName">
+							CO
+						</p>
+
+						<p class="bubbleNumber">
+							196.93
+						</p>
+
+						<p class="bubbleDominant" id="dominantBubble">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+					<div class='bubble nitrogen-monoxide'>
+						<p class="bubbleName">
+							NO
+						</p>
+
+						<p class="bubbleNumber">
+							0
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+					<div class='bubble nitrogen-dioxide'>
+						<p class="bubbleName">
+							NO2
+						</p>
+
+						<p class="bubbleNumber">
+							0.76
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+					<div class='bubble sulfur-dioxide'>
+						<p class="bubbleName">
+							SO2
+						</p>
+
+						<p class="bubbleNumber">
+							0.28
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+				</div>
+
+				<div class="bubbleContainer" style="justify-content: center">
+					<div class='bubble ozone' style="margin-right: 110px">
+						<p class="bubbleName">
+							Ozone
+						</p>
+
+						<p class="bubbleNumber">
+							37.55
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+					<div class='bubble particulate-matter-2.5' >
+						<p class="bubbleName">
+							PM2.5
+						</p>
+
+						<p class="bubbleNumber">
+							25.46
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+					<div class='bubble particulate-matter-10' style="margin-left: 110px;">
+						<p class="bubbleName">
+							PM10
+						</p>
+
+						<p class="bubbleNumber">
+							4.02
+						</p>
+
+						<p class="bubbleDominant">
+							DOMINANT
+						</p>
+
+						<p class="bubbleName">
+							μg/m3
+						</p>
+					</div>
+
+				</div>
+
+				<a href='information.html' style="text-decoration: none">
+					<div class="submitButton" style="text-transform: none; width: 250px;">
+						What does it mean?
+					</div>
+				</a>
+			</div>
+
+			
+
+			</div>
+		</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+
+	<script>
+    //   $(document).ready(function() {
+    //     $.ajax({
+    //       url: "http://api.openweathermap.org/data/2.5/air_pollution?lat=50&lon=50&appid=fb8b1c5fa1170960572e326f544f881a",
+    //       type: "GET",
+    //       success: function(result) {
+    //         console.log(result);
+    //       },
+    //       error: function(error) {
+    //         console.log(error);
+    //       }
+    //     });
+    //   });
+    </script>
+  </body>
+</html>

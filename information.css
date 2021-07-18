@@ -1,0 +1,46 @@
+.infoCardContainer {
+	width: 100%;
+	/* border-style: solid; */
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.infoCard {
+	height: 100%;
+	width: 25%;
+	/* border-style: solid; */
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.cardImage {
+	width: 80%;
+	object-fit: cover;
+}
+.infoCardHeader {
+	color: #1f425f;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-bottom: 0px;
+	font-size: 120%;
+}
+.infoCardInfo {
+	color: #1f425f;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.videoContainer {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
